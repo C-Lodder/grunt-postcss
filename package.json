@@ -27,7 +27,7 @@
   "dependencies": {
     "diff": "^4.0.2",
     "maxmin": "^3.0.0",
-    "postcss": "^7.0.31"
+    "postcss": "^8.0.3"
   },
   "devDependencies": {
     "@lodder/time-grunt": "^4.0.0",
