@@ -9,7 +9,7 @@
   "repository": "C-Lodder/grunt-postcss",
   "license": "MIT",
   "engines": {
-    "node": "^10 || ^12 || >=14"
+    "node": ">=14"
   },
   "scripts": {
     "test": "grunt test"
@@ -31,11 +31,11 @@
   },
   "devDependencies": {
     "@lodder/time-grunt": "^4.0.0",
-    "cssnano": "^5.1.15",
+    "cssnano": "^6.0.0",
     "grunt": "^1.6.1",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-jshint": "^3.2.0",
-    "grunt-contrib-nodeunit": "^4.0.0",
+    "grunt-contrib-nodeunit": "^5.0.0",
     "load-grunt-tasks": "^5.1.0",
     "postcss": "^8.4.22",
     "postcss-scss": "^4.0.6"
