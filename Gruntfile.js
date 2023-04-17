@@ -1,14 +1,12 @@
 'use strict'
 
 const processors = [
-  require('cssnano')
+  require('cssnano'),
 ]
 
-const processorsFn = () => {
-  return [
-    require('cssnano')
-  ]
-}
+const processorsFn = () => [
+  require('cssnano'),
+]
 
 module.exports = (grunt) => {
   require('load-grunt-tasks')(grunt)
@@ -113,7 +111,7 @@ module.exports = (grunt) => {
         },
         src: ['test/fixtures/a.scss', 'test/fixtures/a.css'],
         dest: 'tmp/sequential.css',
-      }
+      },
     },
 
     nodeunit: {

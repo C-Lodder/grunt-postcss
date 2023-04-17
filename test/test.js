@@ -22,17 +22,17 @@ const { readFile, access } = require('fs').promises
  test.ifError(value)
  */
 
-const fileExists = async (file) => {
+const fileExists = async file => {
   try {
     await access(file)
     return true
-  } catch (error) {
+  } catch {
     return false
   }
 }
 
 exports.gruntPostcss = {
-  defaults: async (test) => {
+  async defaults(test) {
     const actual = {
       css: await readFile('tmp/defaults.css', 'utf8'),
     }
@@ -48,7 +48,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  defaultsFn: async (test) => {
+  async defaultsFn(test) {
     const actual = {
       css: await readFile('tmp/defaultsFn.css', 'utf8'),
     }
@@ -64,7 +64,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  mapInline: async (test) => {
+  async mapInline(test) {
     const actual = {
       css: await readFile('tmp/mapInline.css', 'utf8'),
     }
@@ -80,7 +80,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  mapSeparate: async (test) => {
+  async mapSeparate(test) {
     const actual = {
       css: await readFile('tmp/mapSeparate.css', 'utf8'),
       map: await readFile('tmp/mapSeparate.css.map', 'utf8'),
@@ -96,7 +96,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  mapAnnotationPath: async (test) => {
+  async mapAnnotationPath(test) {
     const actual = {
       css: await readFile('tmp/mapAnnotationPath.css', 'utf8'),
       map: await readFile('tmp/maps/mapAnnotationPath.css.map', 'utf8'),
@@ -115,7 +115,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  diff: async (test) => {
+  async diff(test) {
     const actual = {
       css: await readFile('tmp/diff.css', 'utf8'),
       map: await readFile('tmp/diff.css.diff', 'utf8'),
@@ -131,7 +131,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  syntax: async (test) => {
+  async syntax(test) {
     const actual = {
       scss: await readFile('tmp/syntax.scss', 'utf8'),
     }
@@ -144,7 +144,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  writeDest: async (test) => {
+  async writeDest(test) {
     const checkExists = await fileExists('tmp/doWriteDest.scss')
     test.ok(checkExists)
 
@@ -153,7 +153,7 @@ exports.gruntPostcss = {
     test.done()
   },
 
-  sequential: async (test) => {
+  async sequential(test) {
     const checkExists = await fileExists('tmp/sequential.css')
     test.ok(checkExists)
 

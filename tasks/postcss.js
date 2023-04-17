@@ -106,11 +106,11 @@ module.exports = (grunt) => {
    */
   function createTask(input, from, to, cb) {
     return options.sequential ? {
-        input,
-        from,
-        to,
-        cb
-      } :
+      input,
+      from,
+      to,
+      cb,
+    } :
       process(input, from, to).then(cb)
   }
 
@@ -122,7 +122,7 @@ module.exports = (grunt) => {
     return options.sequential ? runSequence() : Promise.all(tasks)
   }
 
-  grunt.registerMultiTask('postcss', 'Process CSS files.', function () {
+  grunt.registerMultiTask('postcss', 'Process CSS files.', function() {
     options = this.options({
       processors: [],
       map: false,
