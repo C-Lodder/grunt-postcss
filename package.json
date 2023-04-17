@@ -25,20 +25,20 @@
     "tasks/*.js"
   ],
   "dependencies": {
-    "diff": "^5.0.0",
+    "diff": "^5.1.0",
     "maxmin": "^3.0.0",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
     "@lodder/time-grunt": "^4.0.0",
-    "cssnano": "^5.0.8",
-    "grunt": "^1.4.1",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-jshint": "^3.1.1",
+    "cssnano": "^5.1.15",
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-jshint": "^3.2.0",
     "grunt-contrib-nodeunit": "^4.0.0",
     "load-grunt-tasks": "^5.1.0",
-    "postcss": "^8.3.11",
-    "postcss-scss": "^4.0.2"
+    "postcss": "^8.4.22",
+    "postcss-scss": "^4.0.6"
   },
   "peerDependencies": {
     "grunt": ">=1.0.4",
