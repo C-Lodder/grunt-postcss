@@ -37,7 +37,7 @@
     "grunt-contrib-jshint": "^3.2.0",
     "grunt-contrib-nodeunit": "^5.0.0",
     "load-grunt-tasks": "^5.1.0",
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.38",
     "postcss-scss": "^4.0.9"
   },
   "peerDependencies": {
