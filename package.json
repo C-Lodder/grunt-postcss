@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "diff": "^5.2.0",
-    "maxmin": "^3.0.0",
+    "maxmin": "^4.1.0",
     "picocolors": "^1.0.1"
   },
   "devDependencies": {
