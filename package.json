@@ -27,7 +27,7 @@
   "dependencies": {
     "diff": "^5.2.0",
     "maxmin": "^3.0.0",
-    "picocolors": "^1.1.0"
+    "picocolors": "^1.1.1"
   },
   "devDependencies": {
     "@lodder/time-grunt": "^4.0.0",
